@@ -1,0 +1,59 @@
+/* ── INPUT UTILITIES ──
+ * ClearTrail form control base styles.
+ * These provide consistent form appearance across the app.
+ */
+
+.form-control {
+  height: 40px;
+  max-width: 100%;
+  width: 100%;
+  border: 1px solid #E0E0E0;
+  border-radius: 6px;
+  padding: 0 12px;
+  font-size: 0.875rem;
+  color: #212121;
+  background-color: #FFFFFF;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #3381FF;
+  box-shadow: 0 0 0 3px rgba(51, 129, 255, 0.1);
+}
+
+.form-control::placeholder {
+  color: #9E9E9E;
+}
+
+.form-control:disabled {
+  background-color: #F5F5F5;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.form-control-error {
+  border-color: #EF4444;
+}
+
+.form-control-error:focus {
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+/* Textarea variant */
+.form-control-textarea {
+  height: auto;
+  min-height: 100px;
+  padding: 10px 12px;
+  resize: vertical;
+}
+
+/* Select variant */
+.form-control-select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%239E9E9E' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  background-size: 16px;
+  padding-right: 36px;
+}
