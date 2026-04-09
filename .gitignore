@@ -3,14 +3,18 @@ node_modules/
 .pnp
 .pnp.js
 
-# Build outputs
-client/dist/
-server/dist/
+# Next.js
+.next/
+out/
+
+# Build
+dist/
 
 # Environment
 .env
 .env.local
 .env.production
+.env*.local
 
 # IDE
 .vscode/
@@ -29,5 +33,9 @@ npm-debug.log*
 # Testing
 coverage/
 
-# Docker
-docker-compose.override.yml
+# Drizzle
+drizzle/meta/
+
+# Misc
+*.tsbuildinfo
+next-env.d.ts
